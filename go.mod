@@ -1,4 +1,4 @@
-module github.com/overcla-im/middleware
+module middleware
 
 go 1.16
 
