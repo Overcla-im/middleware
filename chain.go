@@ -6,11 +6,6 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-func init() {
-	// log "github.com/sirupsen/logrus"
-	/* log.SetFormatter(&log.JSONFormatter{}) */
-}
-
 // LogMiddleware ...
 func LogMiddleware(next http.Handler) http.Handler {
 	log.WithField("middleware", "log").Print("installing")
