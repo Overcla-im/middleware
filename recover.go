@@ -6,8 +6,8 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-// RecoverMiddleware ...
-func RecoverMiddleware(next http.Handler) http.Handler {
+// Recover ...
+func Recover(next http.Handler) http.Handler {
 	log.WithField("middleware", "recover").Println("installing")
 	fn := func(w http.ResponseWriter, r *http.Request) {
 		defer func() {
